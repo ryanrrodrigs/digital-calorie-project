@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Calorie Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="project-header">
+            <h1>Digital Calorie Project</h1>
+            <p class="subtitle">Independent Research Initiative</p>
+            <p class="description">
+                Quantifying social media consumption with the same precision we use for food. 
+                Track your digital intake and understand its impact on your wellbeing.
+            </p>
+        </header>
+
+        <!-- Main Digital Facts Label -->
+        <main class="nutrition-label-container">
+            <div class="nutrition-label" id="digitalFactsLabel">
+                <div class="label-header">
+                    <h2>Digital Facts</h2>
+                    <div class="serving-info">
+                        <span class="serving-size">Serving Size: <span id="servingSize">Daily Usage</span></span>
+                    </div>
+                </div>
+                
+                <div class="calories-section">
+                    <div class="calories-line">
+                        <span class="calories-label">Screen Time Calories</span>
+                        <span class="calories-value" id="totalCalories">0</span>
+                    </div>
+                </div>
+
+                <div class="daily-value-header">
+                    <span>% Daily Value*</span>
+                </div>
+
+                <div class="nutrients-section" id="nutrientsSection">
+                    <div class="nutrient-line default-message">
+                        <span>Enter your screen time below to see your digital nutrition breakdown</span>
+                    </div>
+                </div>
+
+                <div class="footnote">
+                    <p>* Percent Daily Values are based on recommended healthy screen time limits.</p>
+                    <p>Your daily values may be higher or lower depending on your digital wellness goals.</p>
+                </div>
+
+                <div class="warnings-section" id="warningsSection" style="display: none;">
+                    <div class="warnings-header">Digital Health Warnings:</div>
+                    <ul id="warningsList"></ul>
+                </div>
+            </div>
+        </main>
+
+        <!-- Screen Time Input Form -->
+        <section class="form-section">
+            <h3>Track Your Digital Consumption</h3>
+            <form id="screenTimeForm" class="screen-time-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="instagram" class="form-label">Instagram (minutes)</label>
+                        <input type="number" id="instagram" name="instagram" class="form-control" min="0" placeholder="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tiktok" class="form-label">TikTok (minutes)</label>
+                        <input type="number" id="tiktok" name="tiktok" class="form-control" min="0" placeholder="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="twitter" class="form-label">Twitter/X (minutes)</label>
+                        <input type="number" id="twitter" name="twitter" class="form-control" min="0" placeholder="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="facebook" class="form-label">Facebook (minutes)</label>
+                        <input type="number" id="facebook" name="facebook" class="form-control" min="0" placeholder="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="youtube" class="form-label">YouTube (minutes)</label>
+                        <input type="number" id="youtube" name="youtube" class="form-control" min="0" placeholder="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="netflix" class="form-label">Netflix (minutes)</label>
+                        <input type="number" id="netflix" name="netflix" class="form-control" min="0" placeholder="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="gaming" class="form-label">Gaming (minutes)</label>
+                        <input type="number" id="gaming" name="gaming" class="form-control" min="0" placeholder="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email (minutes)</label>
+                        <input type="number" id="email" name="email" class="form-control" min="0" placeholder="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reading" class="form-label">Reading Apps (minutes)</label>
+                        <input type="number" id="reading" name="reading" class="form-control" min="0" placeholder="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="fitness" class="form-label">Fitness Apps (minutes)</label>
+                        <input type="number" id="fitness" name="fitness" class="form-control" min="0" placeholder="0">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn--primary btn--lg btn--full-width">Calculate Digital Calories</button>
+            </form>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h3>About This Research</h3>
+            <div class="about-content">
+                <p>
+                    The Digital Calorie Project applies nutritional science concepts to digital consumption. 
+                    Just as we track food calories to maintain physical health, tracking "digital calories" 
+                    helps us understand and manage our relationship with technology.
+                </p>
+                <p>
+                    Our research examines how different types of digital content affect mental wellbeing, 
+                    productivity, and social connections. By quantifying screen time usage, we aim to 
+                    promote healthier digital habits.
+                </p>
+                <div class="contact-info">
+                    <h4>Research Team Contact</h4>
+                    <p>For questions about this research or to participate in our studies, contact us at research@digitalcalories.org</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
